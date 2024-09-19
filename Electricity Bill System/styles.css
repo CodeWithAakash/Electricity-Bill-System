@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif
+}
+
+table thead tr th {
+    font-weight: 600 !important;
+    font-size: 21px !important;
+}
+
+body {
+    background: #212529 !important;
+}
+
+.huserdetail tr th {
+    font-weight: 400 !important;
+    padding-left: 0px;
+}
+
+.add-edit-container {
+    padding: 20px 0 0px 0;
+    margin-bottom: 20px;
+    width: 400px !important;
+    border-radius: 10px;
+    box-shadow: 0px 0px 100px 1px rgba(0, 0, 0, 0.345);
+    position: relative;
+}
+
+.mycontainer-div {
+    padding: 20px 0 20px 0;
+    width: 400px !important;
+    border-radius: 10px;
+    box-shadow: 0px 0px 100px 1px rgba(0, 0, 0, 0.345);
+}
+
+.fa-fw {
+    width: 2rem !important;
+}
+
+.image-div {
+    width: 130px;
+    height: 130px;
+    position: relative;
+    cursor: pointer;
+    background-image: url('logo.jpg');
+    background-position: center;
+    background-size: cover;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    clip-path: circle();
+}
+
+.image-div:hover {
+    animation: rotate 2s ease;
+}
+
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg)
+    }
+
+    25% {
+        transform: rotate(10deg)
+    }
+
+    50% {
+        transform: rotate(-10deg)
+    }
+
+    75% {
+        transform: rotate(10deg)
+    }
+
+    100% {
+        transform: rotate(0deg)
+    }
+}
+
+tbody i {
+    font-size: 22px !important;
+    color: #212529 !important;
+}
+
+label {
+    font-weight: 600 !important;
+}
+
+input,
+select {
+    color: black;
+    font-size: 18px !important;
+    text-indent: 25px !important;
+    border: 2px solid white !important;
+}
+
+input {
+    height: 100% !important;
+}
+
+.input-field {
+    position: relative;
+    height: 45px !important;
+}
+
+.input-field select {
+    height: 100% !important;
+}
+
+.field i:nth-child(1) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: crimson !important;
+    padding: 10px;
+    height: 100%;
+    border-radius: 3px 0px 0px 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.field i:nth-child(2) {
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: black;
+    cursor: pointer;
+    padding: 10px;
+    height: 100%;
+    border-radius: 0px 3px 3px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#usersTable {
+    white-space: nowrap !important;
+    margin-bottom: 0px !important;
+}
+
+
+@media screen and (max-width: 996px) {
+    .table-responsive {
+        overflow-x: auto !important;
+    }
+}
+
+@media screen and (max-width:500px) {
+
+    .add-edit-container {
+        width: 95% !important;
+    }
+
+    .mycontainer-div {
+        width: 95% !important;
+    }
+
+    #formdiv {
+        max-width: 100% !important;
+    }
+
+    .image {
+        width: 90% !important;
+    }
+}
